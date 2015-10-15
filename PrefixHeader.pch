@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  Movie
+//
+//  Created by Apple on 10/15/15.
+//  Copyright © 2015 cnbin. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "GlobalResource.h"
+#endif
