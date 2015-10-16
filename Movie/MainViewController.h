@@ -10,7 +10,7 @@
 
 @interface MainViewController : UIViewController
 
-- (IBAction)check:(id)sender;
+
 @property (strong, nonatomic) IBOutlet UITextField *city;
 @property (strong, nonatomic) IBOutlet UITextField *cinema;
 

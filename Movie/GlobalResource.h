@@ -15,6 +15,7 @@
 @property (nonatomic, strong) NSString * cinema;
 @property (nonatomic, strong) NSString * city;
 @property (nonatomic, strong) NSMutableArray * movie_array;
+@property (nonatomic, strong) NSMutableArray * time_table_array;
 @property (nonatomic, strong) NSString * movie_number;
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#define SystemThemeColor [UIColor colorWithRed:0 green:199.0f/255.0f blue:140.0f/255.0f alpha:1.0f]
 @interface AppDelegate ()
 
 @end
@@ -16,7 +16,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [[UINavigationBar appearance]setBarTintColor:SystemThemeColor];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];//系统返回键的颜色
     return YES;
 }
 

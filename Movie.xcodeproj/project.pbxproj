@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		18B949501BCFB3D9007510CE /* CNDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B9494F1BCFB3D9007510CE /* CNDetailTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		18B949531BCFB3F0007510CE /* CNDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B949521BCFB3F0007510CE /* CNDetailTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		18B949591BD0A95E007510CE /* CNTimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B949581BD0A95E007510CE /* CNTimeTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		18B9495B1BD0CA63007510CE /* QBFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B9495A1BD0CA63007510CE /* QBFlatButton.m */; settings = {ASSET_TAGS = (); }; };
 		18C288011BCF85F00015013A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C288001BCF85F00015013A /* MainViewController.m */; settings = {ASSET_TAGS = (); }; };
 		18C288091BCF88000015013A /* CNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C288081BCF88000015013A /* CNTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		18C2880C1BCF88990015013A /* CNTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C2880B1BCF88990015013A /* CNTableViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -27,6 +29,10 @@
 		18B9494F1BCFB3D9007510CE /* CNDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNDetailTableViewCell.m; sourceTree = "<group>"; };
 		18B949511BCFB3F0007510CE /* CNDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNDetailTableViewController.h; sourceTree = "<group>"; };
 		18B949521BCFB3F0007510CE /* CNDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNDetailTableViewController.m; sourceTree = "<group>"; };
+		18B949571BD0A95E007510CE /* CNTimeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNTimeTableViewController.h; sourceTree = "<group>"; };
+		18B949581BD0A95E007510CE /* CNTimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNTimeTableViewController.m; sourceTree = "<group>"; };
+		18B9495A1BD0CA63007510CE /* QBFlatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBFlatButton.m; sourceTree = "<group>"; };
+		18B9495C1BD0CA67007510CE /* QBFlatButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QBFlatButton.h; sourceTree = "<group>"; };
 		18C287FF1BCF85F00015013A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		18C288001BCF85F00015013A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		18C288061BCF87A60015013A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -67,6 +73,8 @@
 				18B9494F1BCFB3D9007510CE /* CNDetailTableViewCell.m */,
 				18B949511BCFB3F0007510CE /* CNDetailTableViewController.h */,
 				18B949521BCFB3F0007510CE /* CNDetailTableViewController.m */,
+				18B949571BD0A95E007510CE /* CNTimeTableViewController.h */,
+				18B949581BD0A95E007510CE /* CNTimeTableViewController.m */,
 			);
 			name = DetailViewController;
 			sourceTree = "<group>";
@@ -113,6 +121,8 @@
 		18D893F41BCF53ED00CA3EE8 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
+				18B9495C1BD0CA67007510CE /* QBFlatButton.h */,
+				18B9495A1BD0CA63007510CE /* QBFlatButton.m */,
 				18B9494D1BCFB3AB007510CE /* DetailViewController */,
 				18C2880D1BCF8C0D0015013A /* GlobalResource */,
 				18C288021BCF86FC0015013A /* TableViewController */,
@@ -276,9 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D893FA1BCF53ED00CA3EE8 /* AppDelegate.m in Sources */,
+				18B9495B1BD0CA63007510CE /* QBFlatButton.m in Sources */,
 				18B949501BCFB3D9007510CE /* CNDetailTableViewCell.m in Sources */,
 				18C288011BCF85F00015013A /* MainViewController.m in Sources */,
 				18B949531BCFB3F0007510CE /* CNDetailTableViewController.m in Sources */,
+				18B949591BD0A95E007510CE /* CNTimeTableViewController.m in Sources */,
 				18C288101BCF8C330015013A /* GlobalResource.m in Sources */,
 				18D893F71BCF53ED00CA3EE8 /* main.m in Sources */,
 				18C2880C1BCF88990015013A /* CNTableViewController.m in Sources */,

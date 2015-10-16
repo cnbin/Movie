@@ -87,8 +87,6 @@
         [self.contentView addSubview:self.movie_type];
         [self.contentView addSubview: self.movie_nation];
         [self.contentView addSubview: self.movie_release_date];
-
-
     }
     return self;
 }

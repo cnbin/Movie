@@ -18,6 +18,4 @@
 @property (strong, nonatomic) UILabel *movie_nation;
 @property (strong, nonatomic) UILabel *movie_release_date;
 
-
-
 @end

@@ -12,7 +12,7 @@
 #import "UIImageView+WebCache.h"
 #import "CNDetailTableViewController.h"
 
-static NSString *CellIdentifier = @"CellIdentifier";
+static NSString *CellIdentifier = @"TableCellIdentifier";
 
 @interface CNTableViewController ()
 
@@ -25,6 +25,7 @@ static NSString *CellIdentifier = @"CellIdentifier";
 {
     self = [super initWithStyle:style];
     if (self) {
+   
     }
     return self;
 }
@@ -32,8 +33,8 @@ static NSString *CellIdentifier = @"CellIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"影讯查询";
-    self.tableView.allowsSelection = NO;
+    self.title = @"影讯列表";
+    self.tableView.allowsSelection = YES;
     [self.tableView registerClass:[CNTableViewCell class] forCellReuseIdentifier:CellIdentifier];
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 44.0;
@@ -135,6 +136,7 @@ static NSString *CellIdentifier = @"CellIdentifier";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     CNTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
     cell.movie_name.text = [[_movieArray objectAtIndex:indexPath.row]objectForKey:@"movie_name"];
     
     cell.movie_director.text = [[[NSString alloc]initWithFormat:@"导演:%@",[[_movieArray objectAtIndex:indexPath.row]objectForKey:@"movie_director"]]stringByReplacingOccurrencesOfString:@" " withString:@""];
@@ -153,17 +155,21 @@ static NSString *CellIdentifier = @"CellIdentifier";
     [cell setNeedsUpdateConstraints];
     [cell updateConstraintsIfNeeded];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    [cell setUserInteractionEnabled:YES];
+
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSLog(@"aa");
-    CNDetailTableViewController * cnDetail = [[CNDetailTableViewController alloc]init];
-    [self.navigationController pushViewController:cnDetail animated:YES];
-    [GlobalResource sharedInstance].movie_number = [NSString stringWithFormat: @"%ld", (long)indexPath.row];
+    [self performSegueWithIdentifier:@"detailSegue" sender:nil];
+    [GlobalResource sharedInstance].movie_number = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
     
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"detailSegue"]){
+        
+    }
+    
+}
 @end
